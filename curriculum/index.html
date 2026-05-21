@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>THE BOX 창원 — 수업 비용 및 커리큘럼 안내</title>
     <meta name="description"
-        content="THE BOX 창원의 정규 수업 시간표와 원어민 스터디 가격을 한눈에 확인하세요. 초급·중급 그룹 수업, 원어민 회화 스터디, 1개월·2개월·3개월 코스별 안내.">
+        content="THE BOX 창원의 정규 수업 시간표와 원어민 스터디 가격을 한눈에 확인하세요. 초급·중급 그룹 수업, 원어민 회화 스터디, 16회·24회·48회 코스별 안내.">
     <meta property="og:title" content="THE BOX 창원 — 수업 비용 및 커리큘럼 안내">
     <meta property="og:description" content="창원 더박스의 시간표·가격·커리큘럼을 한 페이지로 확인하세요.">
     <link rel="icon"
@@ -94,6 +94,24 @@
             margin: 0 auto;
         }
 
+        .installment-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: #fff7ed;
+            border: 1.5px solid #fb923c;
+            color: #ea580c;
+            font-size: 0.9rem;
+            font-weight: 700;
+            padding: 7px 18px;
+            border-radius: 999px;
+            margin-top: 16px;
+        }
+
+        .installment-badge svg {
+            flex-shrink: 0;
+        }
+
         .image-card {
             background: #fff;
             border-radius: 24px;
@@ -120,8 +138,14 @@
             .schedule-notes {
                 grid-template-columns: 1fr;
             }
-            .curriculum-hero h1 { font-size: 1.9rem; }
-            .section-head h2 { font-size: 1.6rem; }
+
+            .curriculum-hero h1 {
+                font-size: 1.9rem;
+            }
+
+            .section-head h2 {
+                font-size: 1.6rem;
+            }
         }
 
         .note {
@@ -158,7 +182,9 @@
         }
 
         @media (max-width: 860px) {
-            .price-grid { grid-template-columns: 1fr; }
+            .price-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .price-card {
@@ -191,9 +217,20 @@
             letter-spacing: 0.02em;
         }
 
-        .price-card .badge.normal { background: #fef3c7; color: #d97706; }
-        .price-card .badge.hot { background: #fb923c; color: #fff; }
-        .price-card .badge.long { background: #fde68a; color: #b45309; }
+        .price-card .badge.normal {
+            background: #fef3c7;
+            color: #d97706;
+        }
+
+        .price-card .badge.hot {
+            background: #fb923c;
+            color: #fff;
+        }
+
+        .price-card .badge.long {
+            background: #fde68a;
+            color: #b45309;
+        }
 
         .price-card h3 {
             font-size: 1.25rem;
@@ -241,6 +278,117 @@
             font-weight: 800;
         }
 
+        .price-card .max-discount {
+            margin-top: 10px;
+            background: #fff7ed;
+            border-radius: 10px;
+            padding: 8px 12px;
+            font-size: 0.85rem;
+            color: #ea580c;
+            font-weight: 700;
+        }
+
+        /* 추가 할인 섹션 */
+        .discount-section {
+            margin-top: 48px;
+            border: 2px solid #e2e8f0;
+            border-radius: 22px;
+            padding: 32px 28px;
+            background: #fff;
+        }
+
+        .discount-title {
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: #111;
+            text-align: center;
+            margin: 0 0 24px;
+        }
+
+        .discount-title .discount-note {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #888;
+            margin-left: 6px;
+        }
+
+        .discount-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        @media (max-width: 640px) {
+            .discount-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .discount-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .discount-icon-wrap {
+            flex-shrink: 0;
+            width: 52px;
+            height: 52px;
+            background: #fff7ed;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .discount-content h4 {
+            font-size: 1rem;
+            font-weight: 800;
+            color: #111;
+            margin: 0 0 6px;
+        }
+
+        .discount-content .sub-note {
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: #888;
+        }
+
+        .discount-content ul {
+            margin: 0;
+            padding-left: 18px;
+            color: #444;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        .discount-content ul .highlight {
+            color: #ef4444;
+            font-weight: 800;
+        }
+
+        .discount-divider {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 24px 0;
+        }
+
+        .discount-total {
+            background: #fff7ed;
+            border-radius: 14px;
+            padding: 16px 20px;
+            text-align: center;
+            font-size: 1rem;
+            color: #444;
+            font-weight: 600;
+        }
+
+        .discount-total strong {
+            color: #ea580c;
+            font-size: 1.1rem;
+        }
+
         .cta-band {
             background: linear-gradient(135deg, #111 0%, #1f1937 100%);
             color: #fff;
@@ -277,10 +425,20 @@
             transition: transform 0.15s ease;
         }
 
-        .cta-band a:hover { transform: translateY(-2px); }
+        .cta-band a:hover {
+            transform: translateY(-2px);
+        }
 
-        .cta-band .primary { background: #ef4444; color: #fff; }
-        .cta-band .secondary { background: rgba(255, 255, 255, 0.1); color: #fff; border: 1px solid rgba(255, 255, 255, 0.2); }
+        .cta-band .primary {
+            background: #ef4444;
+            color: #fff;
+        }
+
+        .cta-band .secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
 
         .small-note {
             margin-top: 24px;
@@ -309,7 +467,15 @@
             letter-spacing: 0.01em;
         }
 
-        nav.simple-nav .logo .accent { color: #ef4444; margin-left: 4px; font-size: 0.75rem; vertical-align: middle; background: #fee2e2; padding: 3px 8px; border-radius: 999px; }
+        nav.simple-nav .logo .accent {
+            color: #ef4444;
+            margin-left: 4px;
+            font-size: 0.75rem;
+            vertical-align: middle;
+            background: #fee2e2;
+            padding: 3px 8px;
+            border-radius: 999px;
+        }
 
         nav.simple-nav .nav-links {
             display: flex;
@@ -326,17 +492,23 @@
             border-radius: 999px;
         }
 
-        nav.simple-nav .nav-links a:hover { background: #f5f5f5; }
+        nav.simple-nav .nav-links a:hover {
+            background: #f5f5f5;
+        }
 
         nav.simple-nav .nav-links a.cta {
             background: #ef4444;
             color: #fff;
         }
 
-        nav.simple-nav .nav-links a.cta:hover { background: #dc2626; }
+        nav.simple-nav .nav-links a.cta:hover {
+            background: #dc2626;
+        }
 
         @media (max-width: 600px) {
-            nav.simple-nav .nav-links a:not(.cta) { display: none; }
+            nav.simple-nav .nav-links a:not(.cta) {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -387,7 +559,7 @@
                 <div class="note">
                     <div class="ic">⏱️</div>
                     <h4>한 타임 90분</h4>
-                    <p>아카데미·스터디 모두 한 회당 90분. 자유롭게 조합해서 본인 일정에 맞게 듣을 수 있어요.</p>
+                    <p>아카데미·스터디 모두 한 회당 90분. 자유롭게 조합해서 본인 일정에 맞게 들을 수 있어요.</p>
                 </div>
             </div>
 
@@ -395,42 +567,76 @@
         </div>
     </section>
 
-    <!-- 가격 -->
+    <!-- 원어민 스터디 가격 -->
     <section class="info-section alt">
         <div class="container">
             <div class="section-head">
                 <span class="label" style="background:#ffedd5;color:#ea580c">PRICE</span>
                 <h2>원어민 스터디 가격 안내</h2>
-                <p>오래 함께할수록 회당 비용은 더 저렴해집니다. 가장 많이 선택하는 코스는 <strong>2개월(16회) 코스</strong> 입니다.</p>
+                <p>오래 함께할수록 회당 비용은 더 저렴해집니다. 가장 많이 선택하는 코스는 <strong>24회 코스</strong>입니다.</p>
+                <div class="installment-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                    3·6개월 무이자 / 부분 무이자 할부 가능
+                </div>
             </div>
 
             <div class="image-card">
-                <img src="../photos/changwon-pricing_1777459403519.png" alt="창원 더박스 원어민 스터디 가격표">
+                <img src="../photos/study-pricing-new.png" alt="창원 더박스 원어민 스터디 가격표">
             </div>
 
             <div class="price-grid">
                 <div class="price-card">
-                    <span class="badge normal">🎁 정상가</span>
-                    <h3>1개월 코스</h3>
-                    <p class="sub">총 8회 · 가볍게 시작</p>
-                    <p class="price">180,000<span class="won">원</span></p>
-                    <div class="per">회당 <strong>22,500원</strong></div>
-                </div>
-                <div class="price-card featured">
-                    <span class="badge hot">🔥 가장 인기</span>
-                    <h3>2개월 코스</h3>
-                    <p class="sub">총 16회 · 가장 많이 선택</p>
-                    <p class="original">360,000원</p>
-                    <p class="price" style="color:#ea580c">280,000<span class="won">원</span></p>
+                    <span class="badge normal">☆ 기본 시작</span>
+                    <h3>16회 코스</h3>
+                    <p class="sub">약 2개월 · 부담 없이 시작하는 기본 코스</p>
+                    <p class="price">280,000<span class="won">원</span></p>
                     <div class="per">회당 <strong>17,500원</strong></div>
                 </div>
-                <div class="price-card">
-                    <span class="badge long">📕 실력 변화</span>
-                    <h3>3개월 코스</h3>
-                    <p class="sub">총 24회 · 확실하게 바꾸는 코스</p>
-                    <p class="original">540,000원</p>
+                <div class="price-card featured">
+                    <span class="badge hot">↗ 실력 변화</span>
+                    <h3>24회 코스</h3>
+                    <p class="sub">약 3개월 · 16회 기준 대비 60,000원 절약</p>
                     <p class="price" style="color:#ea580c">360,000<span class="won">원</span></p>
                     <div class="per">회당 <strong>15,000원</strong></div>
+                </div>
+                <div class="price-card">
+                    <span class="badge long">♛ 장기 추천</span>
+                    <h3>48회 코스</h3>
+                    <p class="sub">약 6개월 · 16회 기준 대비 250,000원 절약</p>
+                    <p class="price" style="color:#ea580c">590,000<span class="won">원</span></p>
+                    <div class="per">회당 <strong>12,300원</strong></div>
+                    <div class="max-discount">최대 할인 적용 시 545,000원 · 회당 약 11,400원</div>
+                </div>
+            </div>
+
+            <!-- 추가 할인 섹션 -->
+            <div class="discount-section">
+                <h3 class="discount-title">추가 할인 적용 요건 <span class="discount-note">(중복 적용 가능)</span></h3>
+                <div class="discount-grid">
+                    <div class="discount-item">
+                        <div class="discount-icon-wrap">👥</div>
+                        <div class="discount-content">
+                            <h4>지인 할인 / 1+1 할인 <span class="sub-note">(신규 및 기존 수강생)</span></h4>
+                            <ul>
+                                <li>추천한 지인이 등록할 시, 등록한 지인과 본인 모두 전체 금액에서 <strong class="highlight">각 1만원씩 할인</strong></li>
+                                <li>친구와 동시 등록 시 전체 금액에서 <strong class="highlight">각 1만원씩 할인</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="discount-item">
+                        <div class="discount-icon-wrap">📝</div>
+                        <div class="discount-content">
+                            <h4>리뷰 이벤트 <span class="sub-note">(신규 및 기존 수강생)</span></h4>
+                            <ul>
+                                <li>방문 상담 / 영수증 / 네이버 카페 리뷰 이벤트 참여 시 전체 금액에서 <strong class="highlight">각 5,000원씩 할인</strong></li>
+                                <li>네이버 블로그 후기 작성 시 <strong class="highlight">2만원 할인</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="discount-divider">
+                <div class="discount-total">
+                    ☆ 48회 코스 최대 추가 할인 적용 시 <strong>545,000원</strong> / 회당 약 <strong>11,400원</strong>
                 </div>
             </div>
 
@@ -445,35 +651,66 @@
                 <span class="label" style="background:#ede9fe;color:#7c3aed">ACADEMY PRICE</span>
                 <h2>더박스 아카데미 가격 안내</h2>
                 <p>체계적인 문법·표현 교정과 영어권 원어민 보조 강의가 함께하는 정규 아카데미 코스입니다. 오래 다닐수록 할인 폭이 커져요.</p>
+                <div class="installment-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                    3·6개월 무이자 / 부분 무이자 할부 가능
+                </div>
             </div>
 
             <div class="image-card">
-                <img src="../photos/changwon-academy-pricing_1777460261963.png" alt="창원 더박스 아카데미 가격표">
+                <img src="../photos/academy-pricing-new.png" alt="창원 더박스 아카데미 가격표">
             </div>
 
             <div class="price-grid">
                 <div class="price-card">
-                    <span class="badge normal">🎁 기본 수강</span>
-                    <h3>1개월 코스</h3>
-                    <p class="sub">총 8회 · 한 달 체험</p>
-                    <p class="price">220,000<span class="won">원</span></p>
-                    <div class="per">회당 <strong>27,500원</strong></div>
+                    <span class="badge normal">실력 형성 과정</span>
+                    <h3>2개월 코스</h3>
+                    <p class="sub">기초를 잡고 말하기 루틴을 만드는 과정</p>
+                    <p class="price" style="color:#ea580c">390,000<span class="won">원</span></p>
                 </div>
                 <div class="price-card featured">
-                    <span class="badge hot">🔥 실력 형성 과정</span>
-                    <h3>2개월 코스</h3>
-                    <p class="sub">총 16회 · 50,000원 할인</p>
-                    <p class="original">440,000원</p>
-                    <p class="price" style="color:#ea580c">390,000<span class="won">원</span></p>
-                    <div class="per">회당 <strong>약 24,375원</strong></div>
+                    <span class="badge hot">실력 완성 과정</span>
+                    <h3>3개월 코스</h3>
+                    <p class="sub">표현력과 문장력을 끌어올리는 집중 과정</p>
+                    <p class="price" style="color:#ea580c">570,000<span class="won">원</span></p>
                 </div>
                 <div class="price-card">
-                    <span class="badge long">📕 실력 완성 과정</span>
-                    <h3>3개월 코스</h3>
-                    <p class="sub">총 24회 · 90,000원 할인</p>
-                    <p class="original">660,000원</p>
-                    <p class="price" style="color:#ea580c">570,000<span class="won">원</span></p>
-                    <div class="per">회당 <strong>23,750원</strong></div>
+                    <span class="badge long">♛ 장기 추천</span>
+                    <h3>6개월 코스</h3>
+                    <p class="sub">꾸준한 관리로 실력을 확실히 바꾸는 과정<br>3개월 과정 2회 등록 대비 <strong style="color:#ea580c">150,000원 혜택</strong></p>
+                    <p class="price" style="color:#ea580c">990,000<span class="won">원</span></p>
+                    <div class="max-discount">최대 할인 적용 시 945,000원</div>
+                </div>
+            </div>
+
+            <!-- 추가 할인 섹션 -->
+            <div class="discount-section">
+                <h3 class="discount-title">추가 할인 적용 요건 <span class="discount-note">(중복 적용 가능)</span></h3>
+                <div class="discount-grid">
+                    <div class="discount-item">
+                        <div class="discount-icon-wrap">👥</div>
+                        <div class="discount-content">
+                            <h4>지인 할인 / 1+1 할인 <span class="sub-note">(신규 및 기존 수강생)</span></h4>
+                            <ul>
+                                <li>추천한 지인이 등록할 시, 등록한 지인과 본인 모두 전체 금액에서 <strong class="highlight">각 1만원씩 할인</strong></li>
+                                <li>친구와 동시 등록 시 전체 금액에서 <strong class="highlight">각 1만원씩 할인</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="discount-item">
+                        <div class="discount-icon-wrap">📝</div>
+                        <div class="discount-content">
+                            <h4>리뷰 이벤트 <span class="sub-note">(신규 및 기존 수강생)</span></h4>
+                            <ul>
+                                <li>방문 상담 / 영수증 / 네이버 카페 리뷰 이벤트 참여 시 전체 금액에서 <strong class="highlight">각 5,000원씩 할인</strong></li>
+                                <li>네이버 블로그 후기 작성 시 <strong class="highlight">2만원 할인</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="discount-divider">
+                <div class="discount-total">
+                    6개월 코스 최대 추가 할인 적용 시 <strong>945,000원</strong>
                 </div>
             </div>
 
